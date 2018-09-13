@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 注：经测试ConstraintLayout，只能作为跟布局，不可以嵌套使用 -->
+    <!-- 跟布局 -->
+    <!-- 标题栏 -->
+    <ViewStub
+        android:id="@+id/root_title_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ttitle_h" />
+    <!-- 内容栏 -->
+    <ViewStub
+        android:id="@+id/root_content_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_rl"/>
+
+</RelativeLayout>

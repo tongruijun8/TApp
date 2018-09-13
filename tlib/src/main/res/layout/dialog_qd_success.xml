@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/qd_success_w"
+    android:layout_height="@dimen/qd_success_h"
+    android:background="@mipmap/qd_success"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="签到成功"
+            android:gravity="center"
+            android:textColor="@color/color_zhuse"
+            android:textSize="@dimen/textsize_big1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/qd_success_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/textcolor_point"
+                android:textSize="@dimen/textsize_big3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                android:paddingLeft="3dp"
+                android:gravity="center"
+                android:textColor="@color/color_zhuse"
+                android:textSize="@dimen/textsize_nomal"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

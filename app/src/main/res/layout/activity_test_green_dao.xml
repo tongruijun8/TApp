@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#456365"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增"
+        android:layout_marginTop="20dp"
+        android:onClick="addBtn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删"
+        android:layout_marginTop="20dp"
+        android:onClick="addDelete"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改"
+        android:layout_marginTop="20dp"
+        android:onClick="addUpdate"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查"
+        android:layout_marginTop="20dp"
+        android:onClick="addFind"
+        />
+
+</LinearLayout>

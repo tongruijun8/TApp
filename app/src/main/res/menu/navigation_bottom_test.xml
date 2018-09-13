@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_bottom_test_item1"
+        android:icon="@mipmap/home_shouye_n"
+        android:title="首页2" />
+    <item
+        android:id="@+id/nav_bottom_test_item2"
+        android:icon="@mipmap/home_dingdan_n"
+        android:title="订单2" />
+    <item
+        android:id="@+id/nav_bottom_test_item3"
+        android:icon="@mipmap/home_xiaoxi_n"
+        android:title="消息2" />
+    <item
+        android:id="@+id/nav_bottom_test_item4"
+        android:icon="@mipmap/home_wode_n"
+        android:title="我的2" />
+
+
+</menu>

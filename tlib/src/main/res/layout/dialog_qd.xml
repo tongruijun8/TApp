@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waikuang_rr7_white"
+    >
+
+    <TextView
+        android:id="@+id/dialog_qd_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:lineSpacingExtra="5dp"
+        android:text="接单后随意取消订单会有相应惩罚，是否确认接单？"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/left_spacing"
+        android:paddingRight="@dimen/right_spacing"
+        />
+
+    <CheckBox
+        android:id="@+id/dialog_qd_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/left_spacing"
+        android:layout_marginLeft="@dimen/left_spacing"
+        android:layout_marginRight="@dimen/right_spacing"
+        android:text="下次不再提示"
+        android:textSize="14sp"
+        android:textColor="@color/color_content"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/dialog_qd_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/color_content"
+            android:enabled="true"
+            android:clickable="true"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg"/>
+        <TextView
+            android:id="@+id/dialog_qd_affirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认"
+            android:textSize="16sp"
+            android:textColor="@color/color_content"
+            android:enabled="true"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#719bf1</color>
+    <color name="colorPrimaryDark">#719bf1</color>
+    <color name="colorAccent">#719bf1</color>
+    <color name="colorAccent_red">#963838</color>
+
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorblue">#719bf1</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorgray">#888888</color>
+    <color name="colorred">#ff0000</color>
+    <color name="coloryellow">#f1a923</color>
+
+    <color name="tab_checked">#719bf1</color>
+    <color name="tab_unchecked">#757575</color>
+
+    <!-- 主色调 -->
+    <color name="color_zhuse">#719bf1</color>
+    <color name="color_zhuse2">#fb4946</color>
+    <color name="color_zhuse2_line">#fb4946</color>
+
+    <color name="color_line_bottom">#cccccc</color>
+
+    <!-- button 底色 -->
+    <color name="colorbutton_bg">#a18ecc</color>
+    <color name="colorbuttonline_bg">#719bf1</color>
+    <color name="colorbuttonline_gray">#cccccc</color>
+    <color name="color_gray">#eeeeee</color>
+
+    <!-- 信息 -->
+    <color name="color_name">#0c0e20</color>
+    <color name="color_content">#69748b</color>
+
+    <!-- title.xml -->
+    <color name="title_bg">#ffffff</color>
+
+    <!-- 背景色 -->
+    <color name="color_bg">#eff0f3</color>
+    <color name="color_show">#ffffff</color>
+    <color name="color_rbg">#D4D6DB</color>
+    <color name="color_rg_check">#D4E0FA</color>
+   <color name="color_rg_uncheck">#D4D6DB</color>
+
+    <color name="color_transparent2">#88000000</color>
+
+    <!-- textcolor.xml -->
+    <color name="textcolor_nomal">#444444</color>
+    <color name="textcolor_black">#000000</color>
+    <color name="textcolor_white">#ffffff</color>
+    <color name="textcolor_point">#f17174</color>
+    <color name="textcolor_tishi">#a5abb8</color>
+    <color name="textcolor_check">#719BF1</color>
+    <color name="textcolor_uncheck">#69748B</color>
+
+    <!-- xlistview 相关 -->
+    <color name="transparent">#00000000</color>
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+
+
+    <!-- 按钮 -->
+    <color name="color_btn">#719bf1</color>
+    <color name="color_btn_press">#d4e0fa</color>
+
+    <!-- 自定义密码框相关 -->
+    <color name="textcolor_pswk">#719bf1</color>
+    <color name="textcolor_psw">#719bf1</color>
+
+    <color name="bkg_color">#EFF0F3</color>
+    <!-- 首页 -->
+    <color name="mian_fragnebt_line">#EFF0F3</color>
+    <color name="mian_text_color">#0C0E20</color>
+    <color name="mian_text_checked_color">#719BF1</color>
+    <!--list-->
+    <color name="list_text_color">#888888</color>
+    <color name="search_text_color">#0C0E20</color>
+
+    <!--conmmibuty info-->
+    <color name="conmmibuty_info_color_bg">#D4E0FA</color>
+    <color name="conmmibuty_info_redcolor">#E6494D</color>
+    <!---->
+    <color name="colorprimary">#78A2F7</color>
+    <color name="coloraccent">#5B76E7</color>
+    <!--AdressActivity-->
+    <color name="edtext_color">#666666</color>
+
+    <!---->
+    <color name="text_red_color">#F17174</color>
+    <!---->
+    <color name="paymen_details_bg_color">#D4E0FA</color>
+
+    <!-- 筛选 -->
+    <color name="item_f_select">#D4E0FA</color>
+    <color name="item_f_select_no">#EFF0F3</color>
+
+
+    <!-- 视频播放相关 -->
+    <!--视频加载缓存进度的颜色-->
+    <color name="timeBar_buffered_color">#1FAD21</color>
+    <!--已经播放过视频的颜色-->
+    <color name="timeBar_played_color">#c63020</color>
+    <!--没有加载过进度的颜色-->
+    <color name="timeBar_unplayed_color">#888888</color>
+    <!--视频进度圆点的颜色-->
+    <color name="timeBar_scrubber_color">@color/colorAccent</color>
+
+
+</resources>

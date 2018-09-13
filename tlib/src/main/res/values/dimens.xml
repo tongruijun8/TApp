@@ -1,0 +1,195 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">220dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="spacing">8dp</dimen>
+    <dimen name="spacing1">12dp</dimen>
+    <dimen name="spacing2">20dp</dimen>
+    <dimen name="left_spacing">12dp</dimen>
+    <dimen name="right_spacing">12dp</dimen>
+    <dimen name="left_spacing2">20dp</dimen>
+    <dimen name="right_spacing2">20dp</dimen>
+
+    <dimen name="between_spacing">5dp</dimen>
+
+    <dimen name="spacing_line_height">1dp</dimen>
+
+    <!-- 小标题相关 -->
+    <dimen name="start_line_height">15dp</dimen>
+
+    <!-- main页相关 -->
+    <dimen name="main_img_bottom1">20dp</dimen>
+    <dimen name="main_img_bottom2">105dp</dimen>
+    <dimen name="main_img_left">20dp</dimen>
+    <dimen name="main_img_right">20dp</dimen>
+
+    <!-- 用于计算地图路径的高度 -->
+    <!--<dimen name="amap_other_height">300dp</dimen>-->
+
+    <!-- ttitle.xml -->
+    <dimen name="ttitle_h">50dp</dimen>
+    <dimen name="ttitle_h2">36dp</dimen>
+    <dimen name="ttitle_img_w">45dp</dimen>
+    <dimen name="ttitle_menu_top">-10dp</dimen>
+
+    <!-- 字体的大小 -->
+    <dimen name="textsize_smallless">10sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_nomal">14sp</dimen>
+    <dimen name="textsize_big1">16sp</dimen>
+    <dimen name="textsize_big2">18sp</dimen>
+    <dimen name="textsize_big3">20sp</dimen>
+    <dimen name="textsize_big4">28sp</dimen>
+    <dimen name="textsize_title">20sp</dimen>
+
+    <dimen name="textsize_psw">36sp</dimen>
+
+    <dimen name="bottom_dialog_height">350dp</dimen>
+    <dimen name="dialog_w">220dp</dimen>
+    <dimen name="dialog_h">80dp</dimen>
+
+    <!-- into 文件夹下的参数 -->
+
+    <!-- user_basic_info.xml 参数 -->
+    <dimen name="basic_info_h">48dp</dimen>
+
+    <!-- user_post_info.xml 参数 -->
+    <dimen name="post_info_h">48dp</dimen>
+    <dimen name="post_info_h2">96dp</dimen>
+    <dimen name="post_info_paddingleft">20dp</dimen>
+    <dimen name="post_info_paddingright">20dp</dimen>
+
+    <dimen name="post_info_leftw">120dp</dimen>
+    <dimen name="post_info_rightw">15dp</dimen>
+
+    <!-- usercenter.xml -->
+    <dimen name="usercenter_h">50dp</dimen>
+    <dimen name="usercenter_marginleft">60dp</dimen>
+    <dimen name="usercenter_space">10dp</dimen>
+
+    <!-- userinfo.xml -->
+    <dimen name="userinfo_h">48dp</dimen>
+    <dimen name="userinfo_h1">45dp</dimen>
+    <dimen name="userinfo_h2">80dp</dimen>
+    <dimen name="userinfo_paddingleft">10dp</dimen>
+    <dimen name="userinfo_paddingright">10dp</dimen>
+    <dimen name="userinfo_space">1dp</dimen>
+    <dimen name="userinfo_space2">10dp</dimen>
+    <dimen name="userinfo_space3">20dp</dimen>
+
+
+    <!-- xlistview 相关 -->
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+
+    <!-- setting.xml -->
+    <dimen name="setting_h">50dp</dimen>
+    <dimen name="setting_h2">100dp</dimen>
+    <dimen name="setting_space">1dp</dimen>
+    <dimen name="setting_space2">10dp</dimen>
+
+    <!-- about.xml -->
+    <dimen name="setting_about_h">50dp</dimen>
+    <dimen name="setting_about_paddingleft">10dp</dimen>
+    <dimen name="setting_about_paddingright">10dp</dimen>
+
+    <!-- servicecenter.xml -->
+    <dimen name="servicecenter_h">50dp</dimen>
+    <dimen name="servicecenter_space">1dp</dimen>
+    <dimen name="servicecenter_space2">10dp</dimen>
+    <dimen name="servicecenter_paddingleft">10dp</dimen>
+    <dimen name="servicecenter_paddingright">10dp</dimen>
+
+
+    <!-- frist.xml -->
+    <dimen name="frist_info_h">25dp</dimen>
+    <dimen name="frist_info_h2">35dp</dimen>
+    <dimen name="frist_info_h3">50dp</dimen>
+    <dimen name="frist_info_paddingleft">10dp</dimen>
+    <dimen name="frist_info_paddingright">10dp</dimen>
+    <dimen name="frist_info_paddingtop">5dp</dimen>
+    <dimen name="frist_info_paddingbottom">5dp</dimen>
+
+
+    <!-- baojie.xml -->
+    <dimen name="dd_baojie_h">45dp</dimen>
+    <dimen name="dd_baojie_paddingleft">10dp</dimen>
+    <dimen name="dd_baojie_paddingright">10dp</dimen>
+
+
+    <!-- tdialog 相关 -->
+    <dimen name="tdialog_item_h">40dp</dimen>
+    <dimen name="tdialog_title_h">50dp</dimen>
+    <dimen name="tdialog_title_h_higher">100dp</dimen>
+
+    <!-- item_yuyue.xml -->
+
+    <dimen name="item_yy_h">30dp</dimen>
+
+    <!-- 经历 -->
+    <dimen name="jl_ll_h">50dp</dimen>
+    <dimen name="view_h">60dp</dimen>
+
+
+    <!--ACTIVITY边距-->
+    <dimen name="activity_left_ringht_size">13sp</dimen>
+    <dimen name="activity_top_bottom_size">10sp</dimen>
+
+    <!-- 首页 -->
+    <dimen name="mian_text_size">16sp</dimen>
+
+    <dimen name="mian_fragnebt_line">10dp</dimen>
+    <dimen name="mian_first_course">180dp</dimen>
+    <dimen name="mian_btn_width">162dp</dimen>
+    <dimen name="mian_btn_height">95dp</dimen>
+    <!--list-->
+    <dimen name="mian_img_list_height">100dp</dimen>
+    <dimen name="list_text_size">14sp</dimen>
+    <dimen name="course_text_size">18sp</dimen>
+    <!--community-->
+    <dimen name="community_left_ringht">12dp</dimen>
+    <!--conmmibuty info-->
+    <dimen name="community_text_size">16sp</dimen>
+    <dimen name="community_jifent_size">12sp</dimen>
+    <dimen name="community_jifent_last_size">18sp</dimen>
+
+    <dimen name="test">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <!-- 签到成功弹框的尺寸 -->
+    <dimen name="qd_success_w">170dp</dimen>
+    <dimen name="qd_success_h">210dp</dimen>
+
+    <!-- 红包成功弹框的尺寸 -->
+    <dimen name="hb_success_w">300dp</dimen>
+    <dimen name="hb_success_h">280dp</dimen>
+
+
+    <!-- 搜索框 -->
+    <dimen name="ssk_height1">300dp</dimen>
+    <dimen name="ssk_height2">150dp</dimen>
+    <dimen name="ssk_height3">300dp</dimen>
+    <dimen name="ssk_height4">150dp</dimen>
+    <!-- 筛选 -->
+    <dimen name="item_f_title_h">35dp</dimen>
+    <dimen name="item_f_content_h">45dp</dimen>
+
+    <!-- 社区 -->
+    <dimen name="item_image_h2">100dp</dimen>
+    <dimen name="item_image_h3">70dp</dimen>
+
+    <!-- 导航页 -->
+    <dimen name="point_size">8dp</dimen>
+    <dimen name="point_spacing">5dp</dimen>
+
+    <dimen name="jfdh_h">190dp</dimen>
+
+    <dimen name="dialog_bottom_h">120dp</dimen>
+</resources>
