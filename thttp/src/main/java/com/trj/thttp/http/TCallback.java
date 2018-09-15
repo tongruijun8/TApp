@@ -3,7 +3,7 @@ package com.trj.thttp.http;
 import android.content.Context;
 import android.content.Intent;
 
-import com.trj.thttp.MainActivity;
+import com.trj.thttp.TestRetrofitHttpPostActivity;
 import com.trj.thttp.bean.resp.RespBean;
 import com.trj.tlib.uils.Logger;
 
@@ -26,7 +26,7 @@ public abstract class TCallback<T> implements Callback<RespBean<T>> {
             onTSuccess(respBean);
         }else if(respBean.getCode() == 201){
             // token 失效
-            context.startActivity(new Intent(context, MainActivity.class));
+            context.startActivity(new Intent(context, TestRetrofitHttpPostActivity.class));
         }else{
             onTFail(respBean.getCode(), respBean.getMsg());
         }

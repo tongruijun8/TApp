@@ -4,31 +4,30 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class HttpRetrofit extends HttpBase {
+public class HttpRetrofitAndRxjava extends HttpBase{
 
-    private volatile static HttpRetrofit mInstance;
+    private volatile static HttpRetrofitAndRxjava mInstance;
 
-    public HttpAPI hApi;
+    public HttpAPIRxjava hApi;
 
-    protected HttpRetrofit() {
+    protected HttpRetrofitAndRxjava() {
         Retrofit retrofit = new Retrofit.Builder()
-//                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())//添加RxJava支持
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(baseUrl)
                 .client(genericClient())
                 .build();
-        hApi = retrofit.create(HttpAPI.class);
+        hApi = retrofit.create(HttpAPIRxjava.class);
     }
 
-    public static HttpRetrofit getInstance() {
+    public static HttpRetrofitAndRxjava getInstance() {
         if (mInstance == null) {
-            synchronized (HttpRetrofit.class) {
+            synchronized (HttpRetrofitAndRxjava.class) {
                 if (mInstance == null){
-                    mInstance = new HttpRetrofit();
+                    mInstance = new HttpRetrofitAndRxjava();
                 }
             }
         }
         return mInstance;
     }
-
 }

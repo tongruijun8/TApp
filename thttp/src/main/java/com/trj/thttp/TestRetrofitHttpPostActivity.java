@@ -8,25 +8,32 @@ import com.trj.thttp.bean.req.ReqBean;
 import com.trj.thttp.bean.resp.LoginInfo;
 import com.trj.thttp.bean.resp.RespBean;
 import com.trj.thttp.http.HttpRetrofit;
+import com.trj.thttp.http.HttpRetrofitAndRxjava;
 import com.trj.thttp.http.TCallback;
 import com.trj.tlib.activity.BaseTitleActivity;
 import com.trj.tlib.uils.Logger;
 
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends BaseTitleActivity {
+public class TestRetrofitHttpPostActivity extends BaseTitleActivity {
 
     private HttpRetrofit httpRetrofit;
-
+    private HttpRetrofitAndRxjava httpRetrofitAndRxjava;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         httpRetrofit = HttpRetrofit.getInstance();
+        httpRetrofitAndRxjava = HttpRetrofitAndRxjava.getInstance();
     }
 
     @Override
@@ -69,7 +76,6 @@ public class MainActivity extends BaseTitleActivity {
         codeVo.setVerifyCode("000000");
         reqBean.setData(codeVo);
         String jsonStr = gson.toJson(reqBean);
-        Logger.t(jsonStr);
         RequestBody body = httpRetrofit.getRequestBody(jsonStr);
 //        -------------方法一
 //        Call<ResponseBody> call = httpRetrofit.hApi.loginYzm(body);
@@ -113,5 +119,40 @@ public class MainActivity extends BaseTitleActivity {
             }
         });
 
+    }
+
+    public void btn2(View view) {
+        ReqBean<PhoneVerifyCodeVo> reqBean = new ReqBean<>();
+        PhoneVerifyCodeVo codeVo = new PhoneVerifyCodeVo();
+        codeVo.setPhone("15091288100");
+        codeVo.setVerifyCode("000000");
+        reqBean.setData(codeVo);
+        String jsonStr = gson.toJson(reqBean);
+        RequestBody body = httpRetrofitAndRxjava.getRequestBody(jsonStr);
+        Observable<RespBean<LoginInfo>> observable = httpRetrofitAndRxjava.hApi.loginYzm2(body);
+        observable.subscribeOn(Schedulers.io())// 在子线程中进行Http访问
+                .observeOn(AndroidSchedulers.mainThread()) // UI线程处理返回接口
+                .subscribe(new Observer<RespBean<LoginInfo>>() {//订阅
+                    Disposable disposable;
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        disposable = d;
+                    }
+
+                    @Override
+                    public void onNext(RespBean<LoginInfo> loginInfoRespBean) {
+                        Logger.t("----result = " + gson.toJson(loginInfoRespBean));
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
     }
 }
